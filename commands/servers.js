@@ -1,10 +1,24 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('servers')
-		.setDescription('Helps you customize the skins of the NPCs'),
+		.setDescription('Returns a list of a few servers using the plugin to try the plugin out'),
 	async execute(interaction) {
-		await interaction.reply('The servers command will live here.');
+				
+		
+		// https://discordjs.guide/popular-topics/embeds.html#using-the-embed-constructor
+		const exampleEmbed = new MessageEmbed()
+		.setColor('#5ACFF5')
+		.setTitle('Servers')
+		.setDescription('Servers using this plugin:\n➱ mc.voxcraft.us\n➱ Play.nzcraft.net\n➱ mc.novasurvival.it\n➱ play.vencagames.cz\n➱ mc.uranocraft.net')
+		.setAuthor({ name: 'KnockioFFA', iconURL: 'https://i.imgur.com/jiSUxRz.png', url: 'https://www.mc-market.org/resources/20068/' })
+		.setTimestamp()
+		.setFooter({ text: 'KnockiBot made by JustLeader#5532', iconURL: 'https://i.imgur.com/amZUuhG.png' });
+
+		interaction.reply({ embeds: [exampleEmbed] });
+
+
 	},
 };
