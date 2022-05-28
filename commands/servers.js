@@ -12,7 +12,7 @@ module.exports = {
 		const exampleEmbed = new MessageEmbed()
 		.setColor('#5ACFF5')
 		.setTitle('Servers')
-		.setDescription('Servers using this plugin:\n➱ mc.voxcraft.us\n➱ Play.nzcraft.net\n➱ mc.novasurvival.it\n➱ play.vencagames.cz\n➱ mc.uranocraft.net')
+		.setDescription('**Servers using this plugin:**\n➱ mc.voxcraft.us\n➱ play.nzcraft.net\n➱ mc.novasurvival.it\n➱ play.vencagames.cz\n➱ mc.uranocraft.net')
 		.setAuthor({ name: 'KnockioFFA', iconURL: 'https://i.imgur.com/jiSUxRz.png', url: 'https://www.mc-market.org/resources/20068/' })
 		.setTimestamp()
 		.setFooter({ text: 'KnockiBot made by JustLeader#5532', iconURL: 'https://i.imgur.com/amZUuhG.png' });
