@@ -4,7 +4,6 @@ const { token } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 
-
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -22,6 +21,7 @@ for (const file of eventFiles) {
 }
 
 
+// Registering commands
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
@@ -34,6 +34,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
+// Running commands
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 

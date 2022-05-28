@@ -1,0 +1,9 @@
+{
+    "token": "blahblahblahbottoken123",
+    "prefix": "kn!",
+    "admins": ["489821801451618330", "784833081457508353"],
+    "bot_name": "KnockioBOT",
+  	"suggestion_channel_id":"suggestionChannelID",
+    "clientId": "botClientID",
+    "guildId": "guildID"
+}
