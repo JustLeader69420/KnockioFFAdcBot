@@ -2,6 +2,7 @@ module.exports = {
 	name: 'ready',
 	once: true,
 	execute(client) {
-		console.log(`Running... Logged in as ${client.user.tag}.`);
+		let timestamp = Date.now();
+		console.log(`${Math.floor(timestamp/1000)} | Running... Logged in as ${client.user.tag}.`);
 	},
 };
