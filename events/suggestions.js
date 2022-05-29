@@ -1,0 +1,12 @@
+const { suggestion_channel_id } = require('../config.json');
+
+module.exports = {
+	name: 'messageCreate',
+	execute(message) {
+		if(message.channel == suggestion_channel_id){
+            console.log("Adding suggestions channel reactions onto message with ID " + message.id)
+            message.react('accept:845429993701244989');
+            message.react('deny:842180487903707176');
+        }
+	},
+};
