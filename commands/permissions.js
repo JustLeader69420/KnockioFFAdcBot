@@ -14,7 +14,6 @@ module.exports = {
 		.setTitle('Permissions')
 		.setDescription('➱ knc.admin\n➱ knc.admin.forcemap\n➱ knc.joinmessage.bypass\n➱ knc.trail.*\n➱ knc.trail.<trail>\n➱ knc.killsound.*\n➱ knc.killsound.<killsound>\n➱ knc.killeffect.*\n➱ knc.killeffect.<killeffect>\n➱ knc.block.*\n➱ knc.block.<block animation>\n➱ knc.skipmap')
 		.setAuthor({ name: 'KnockioFFA', iconURL: 'https://i.imgur.com/jiSUxRz.png', url: 'https://www.mc-market.org/resources/20068/' })
-		.setTimestamp()
 		.setFooter({ text: 'KnockiBot made by JustLeader#5532', iconURL: 'https://i.imgur.com/amZUuhG.png' });
 
 		interaction.reply({ embeds: [exampleEmbed] });
