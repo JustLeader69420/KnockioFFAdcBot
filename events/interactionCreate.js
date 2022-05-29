@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'interactionCreate',
 	execute(interaction) {
-		console.log(`${interaction.user.tag} triggered the "${interaction.commandName}" command in #${interaction.channel.name} (${interaction.channel.id})`);
+		let timestamp = Date.now();
+		console.log(`${Math.floor(timestamp/1000)} | ${interaction.user.tag} triggered the "${interaction.commandName}" command in #${interaction.channel.name} (${interaction.channel.id})`);
 	},
 };
