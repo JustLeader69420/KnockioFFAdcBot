@@ -9,9 +9,10 @@ module.exports = {
             try {
             message.react('accept:845429993701244989');
             message.react('deny:842180487903707176');
-            }catch{
+            }catch (error){
                 let timestamp = Date.now();
                 console.log(Math.floor(timestamp/1000) + " | Failed at adding suggestions to message with ID " + message.id + " in the configured suggestions channel.")
+                console.error(error);
             }
         }
 	},
