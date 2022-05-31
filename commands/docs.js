@@ -3,7 +3,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('docs')
-		.setDescription('Returns the link to the plugin Documentation'),
+		.setDescription("Returns the link to the plugin's Documentation"),
 	async execute(interaction) {
 		await interaction.reply("You can find documentation about the plugin's config files and more at **<https://knockioffa.justleader.eu/>**.");
 	},
