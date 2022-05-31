@@ -4,6 +4,6 @@ module.exports = {
 	execute(client) {
 		let timestamp = Date.now();
 		console.log(`${Math.floor(timestamp/1000)} | Running... Logged in as ${client.user.tag}.`);
-		client.user.setActivity('You', { type: 'WATCHING' });
+		client.user.setActivity('you :)', { type: 'WATCHING' });
 	},
 };
