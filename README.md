@@ -1,6 +1,8 @@
 # KnockioFFAdcBot [![CodeFactor](https://www.codefactor.io/repository/github/justleader69420/knockioffadcbot/badge)](https://www.codefactor.io/repository/github/justleader69420/knockioffadcbot)
 KnockioFFA Discord Bot
 
+## This repository has moved to https://git.justleader.eu/justleader/KnockioFFAdcBot and will no longer be maintained here.
+
 This is a pretty simple Discord bot made using the discord.js docs.
 It includes a few simple slash commands with embeds and logs the usage.
 
